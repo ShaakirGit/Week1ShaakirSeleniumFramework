@@ -69,7 +69,8 @@ public class LoginTests {
 		loginPOM.Slug("Slug Test");
 		loginPOM.Description("Shaakir's 3rd Test");
 		loginPOM.AddCategoryBtn();
-				
+		
+		
 	    screenShot.captureScreenShot("TestCase");
 	}
 	
