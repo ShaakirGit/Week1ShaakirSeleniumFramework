@@ -9,6 +9,36 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+/**
+ * @author SHAAKIR
+ *
+ * @param <Webelement>
+ */
+/**
+ * @author SHAAKIR
+ *
+ * @param <Webelement>
+ */
+/**
+ * @author SHAAKIR
+ *
+ * @param <Webelement>
+ */
+/**
+ * @author SHAAKIR
+ *
+ * @param <Webelement>
+ */
+/**
+ * @author SHAAKIR
+ *
+ * @param <Webelement>
+ */
+/**
+ * @author SHAAKIR
+ *
+ * @param <Webelement>
+ */
 public class LoginPOM<Webelement> {
 	private WebDriver driver; 
 	
@@ -17,14 +47,11 @@ public class LoginPOM<Webelement> {
 		PageFactory.initElements(driver, this);
 	}
 	
+	
 	@FindBy(xpath="//a[@class='sign-in']")
-	private WebElement loginBtn; 
+	private WebElement loginBtn;
 	
-	
-	public void clickLoginBtn() {
-		this.loginBtn.click(); 
-	}
-	
+		
 	@FindBy(id="user_login")
 	private WebElement userName; 
 	
@@ -77,96 +104,148 @@ public class LoginPOM<Webelement> {
 	private WebElement AddCategoryBtn;
 	
 	
-	
+	/** Test Case1 starts here
+	 * Click on Login button on the home screen of http://realty-real-estate.upskills.in/
+	 */
+	public void clickLoginBtn() {
+		this.loginBtn.click(); 
+	} 
 			
+	/**
+	 * Passing Username on the screen logic
+	 */
 	public void sendUserName(String userName) {
 		this.userName.clear();
 		this.userName.sendKeys(userName);
 	}
 	
-	private Object xpathpartialLinkText(String string) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	
+	/**
+	 * Passing Password Logic
+	 */
 	public void sendPassword(String password) {
 		this.password.clear(); 
 		this.password.sendKeys(password); 
 	}
 	
+	/**
+	 * Clicking on Sign In Button
+	 */
 	public void clickSignInBtn() {
 		this.SignInBtn.click();
 	}
 	
+	/**
+	 * Hovering on the Posts Link
+	 */
 	public void hoverPosts() {
 		Actions act = new Actions(driver);
 		act.moveToElement(Poststohover).perform();
 	}
 	
+	/**
+	 * Click on AllPosts link Logic
+	 */
 	public void clickPostsBtn() {
 		this.AllPostsBtn.click(); 
 	
 	}
 	
-	/* public void Firstpost() {
-		// Actions post = new Actions(driver);
-		// post.moveToElement(FirstPost).perform();
+	    /**
+		 * Clicking on the First Posts logic
+		 */
+	 public void Firstpost() {
+		 Actions post = new Actions(driver);
+		 post.moveToElement(FirstPost).perform();
 		 
-	 }
-	 
-	 public void Trash() {
-		// this.Trash.click();
+	 } 
+	  
+	     /**
+		 * Clicking on the Trash Button logic
+		 */
+	   public void Trash() {
+		this.Trash.click();
 		 
-	 } */
+	 } 
 	 
-	 public void Addnew() {
+	 /** 1st  Test Case Ends here  **/
+	/**
+	 * 2nd Test case starts here --Clicking on the AddNew button for creating new post
+	 */
+	public void Addnew() {
 		 this.AddNew.click();
 	 }
 	 
-	 public void sendLabel(String Label) {
+	 /**
+	 * Passing input to the Title Field
+	 */
+	public void sendLabel(String Label) {
 		    this.Label.clear();
 			this.Label.sendKeys(Label);
 	 }
 	 
-	 public void sendContent(String TextContent) {
+	 /**
+	 * Passing input to the Description Field
+	 */
+	public void sendContent(String TextContent) {
 		    this.TextContent.clear();		    
 			this.TextContent.sendKeys(TextContent);
 	 }
 
-	 public void Publish() {
+	 /**
+	 * Clicking on Publish Button
+	 */
+	public void Publish() {
 		 this.Publish.click();
 	 }
 	 
+	
+	
+	 /** 2nd  Test Case Ends here  **/
 	 
-	 public void Categories() {
+	 
+	 /**
+	 * 3rd Test Case Starts here --	 * Clicking on Categories Link
+	 */
+	public void Categories() {
 		 this.Categories.click();
 	 }
 	 
 	 
-	 public void NameText(String NameText) {
+	 /**
+	 * Passing value for the Name of the Category Field
+	 */
+	public void NameText(String NameText) {
 		    this.NameText.clear();
 			this.NameText.sendKeys(NameText);
 	 
 	 }
 	 
 	 
-	 public void Slug(String Slug) {
+	 /**
+	 * Passing value for the Slug Field
+	 */
+	public void Slug(String Slug) {
 		    this.Slug.clear();
 			this.Slug.sendKeys(Slug);
 	 
 	 }
 
 
-	 
+	/**
+	 * Passing value for the Description Field
+	 */
 	 public void Description(String Description) {
 		    this.Description.clear();
 			this.Description.sendKeys(Description);
 	 
 	 }
 	 
-	 
+	 /**
+		 * Click on Add category Button Field
+		 */
 	 public void AddCategoryBtn() {
 		 this.AddCategoryBtn.click();
 	 }
-	 
+	 /** 3rd  Test Case Ends here  **/
 }

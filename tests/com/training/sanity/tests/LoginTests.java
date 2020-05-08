@@ -46,22 +46,24 @@ public class LoginTests {
 		// driver.quit();
 	}
 	@Test(priority =1,enabled=true)
-	public void validLoginTest1() {
+	public void validLoginTest() {
+		/*1st Test case Logic Execution */
 		loginPOM.clickLoginBtn();
 		loginPOM.sendUserName("admin");
 		loginPOM.sendPassword("admin@123");
 		loginPOM.clickSignInBtn(); 
 		loginPOM.hoverPosts();
 		loginPOM.clickPostsBtn();
-		//loginPOM.Firstpost();
-		//loginPOM.Trash();		
+		loginPOM.Firstpost();
+		loginPOM.Trash();		
 		
+		/*2nd Test case Logic Execution */
 		loginPOM.Addnew();
 		loginPOM.sendLabel("Shaakir's Post Label");
 		loginPOM.sendContent("This is Shaakir's Content");
 		loginPOM.Publish();
 		
-		
+		/*3rd Test case Logic Execution */
 		loginPOM.Categories();
 		loginPOM.NameText("Shaakir's Category");
 		loginPOM.Slug("Slug Test");
@@ -69,19 +71,8 @@ public class LoginTests {
 		loginPOM.AddCategoryBtn();
 		
 		
-	//	screenShot.captureScreenShot("SecondTestCase");
-		
-		screenShot.captureScreenShot("FirstTestCase");
+	    screenShot.captureScreenShot("TestCase");
 	}
 	
-	@Test(priority =2,enabled=false)
-	public void validLoginTest2(){
-		loginPOM.Addnew();
-		loginPOM.sendLabel("Shaakir's Post Label");
-		loginPOM.sendContent("This is Shaakir's Content");
-		
-		screenShot.captureScreenShot("SecondTestCase");
-	
-}
 	
 }
