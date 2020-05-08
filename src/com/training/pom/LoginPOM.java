@@ -9,36 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-/**
- * @author SHAAKIR
- *
- * @param <Webelement>
- */
-/**
- * @author SHAAKIR
- *
- * @param <Webelement>
- */
-/**
- * @author SHAAKIR
- *
- * @param <Webelement>
- */
-/**
- * @author SHAAKIR
- *
- * @param <Webelement>
- */
-/**
- * @author SHAAKIR
- *
- * @param <Webelement>
- */
-/**
- * @author SHAAKIR
- *
- * @param <Webelement>
- */
 public class LoginPOM<Webelement> {
 	private WebDriver driver; 
 	
