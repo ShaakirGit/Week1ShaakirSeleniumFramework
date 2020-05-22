@@ -6,7 +6,7 @@
       <class name="com.training.sanity.tests.LoginTests">
         <methods>
           <include name="setUpBeforeClass"/>
-          <include name="BlogFunctionality"/>
+          <include name="createuserfunctionality"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

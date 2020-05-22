@@ -19,9 +19,15 @@ public class LoginDataProviders {
 		Object[][] result = new Object[list.size()][]; 
 		int count = 0; 
 		for(LoginBean temp : list){
-			Object[]  obj = new Object[2]; 
+			Object[]  obj = new Object[7]; 
+			
 			obj[0] = temp.getUserName(); 
-			obj[1] = temp.getPassword(); 
+			obj[1] = temp.getEmail(); 
+			obj[2] = temp.getFirstname(); 
+			obj[3] = temp.getLastname(); 
+			obj[4] = temp.getWebsite(); 
+			obj[5] = temp.getPassword();
+			obj[6] = temp.getRole();
 			
 			result[count ++] = obj; 
 		}
@@ -32,7 +38,8 @@ public class LoginDataProviders {
 	
 	@DataProvider(name = "excel-inputs")
 	public Object[][] getExcelData(){
-		String fileName ="C:/Users/Naveen/Desktop/Testing.xlsx"; 
+		String fileName ="E:/Test.xlsx"; 
+		//String fileName ="E:/ErrorTest.xlsx";      //Test case rect 078 -File for testing the Invalid data passed through excel
 		return new ApachePOIExcelRead().getExcelContent(fileName); 
 	}
 	

@@ -1,29 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample test Suite" duration-ms="52534" started-at="2020-05-15T04:06:54Z" finished-at="2020-05-15T04:07:46Z">
+  <suite name="Default suite" duration-ms="73532" started-at="2020-05-22T14:45:28Z" finished-at="2020-05-22T14:46:42Z">
     <groups>
     </groups>
-    <test name="Sample test" duration-ms="52534" started-at="2020-05-15T04:06:54Z" finished-at="2020-05-15T04:07:46Z">
-      <class name="com.training.sanity.tests.LoginTests">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTests@1f3165e7]" name="setUpBeforeClass" is-config="true" duration-ms="35" started-at="2020-05-15T00:06:54Z" finished-at="2020-05-15T00:06:54Z">
+    <test name="Default test" duration-ms="73532" started-at="2020-05-22T14:45:28Z" finished-at="2020-05-22T14:46:42Z">
+      <class name="com.training.regression.tests.LoginDBTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.regression.tests.LoginDBTest@53830483]" name="setUpBeforeClass" is-config="true" duration-ms="37402" started-at="2020-05-22T10:45:28Z" finished-at="2020-05-22T10:46:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@1f3165e7]" name="setUp" is-config="true" duration-ms="21083" started-at="2020-05-15T00:06:54Z" finished-at="2020-05-15T00:07:15Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginDBTest@53830483]" name="setUp" is-config="true" duration-ms="1" started-at="2020-05-22T10:46:19Z" finished-at="2020-05-22T10:46:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="BlogFunctionality()[pri:2, instance:com.training.sanity.tests.LoginTests@1f3165e7]" name="BlogFunctionality" duration-ms="29351" started-at="2020-05-15T00:07:15Z" finished-at="2020-05-15T00:07:44Z">
+        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginDBTest@53830483]" name="loginDBTest" duration-ms="21400" started-at="2020-05-22T10:46:19Z" data-provider="db-inputs" finished-at="2020-05-22T10:46:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[manzoor@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[mehadi]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Manzoor@Mehadi123]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Agent]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BlogFunctionality -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@1f3165e7]" name="tearDown" is-config="true" duration-ms="2001" started-at="2020-05-15T00:07:44Z" finished-at="2020-05-15T00:07:46Z">
+        </test-method> <!-- loginDBTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginDBTest@53830483]" name="tearDown" is-config="true" duration-ms="1000" started-at="2020-05-22T10:46:41Z" finished-at="2020-05-22T10:46:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.LoginTests -->
-    </test> <!-- Sample test -->
-  </suite> <!-- Sample test Suite -->
+      </class> <!-- com.training.regression.tests.LoginDBTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

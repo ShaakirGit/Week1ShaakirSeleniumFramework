@@ -52,9 +52,10 @@ public class LoginTests {
 		loginPOM.sendUserName("admin");
 		loginPOM.sendPassword("admin@123");
 		loginPOM.clickSignInBtn(); 
-		loginPOM.hoverPosts();
+	}
+		
 		/*
-		 * loginPOM.clickPostsBtn(); loginPOM.Firstpost(); loginPOM.Trash();
+		 * loginPOM.hoverPosts();loginPOM.clickPostsBtn(); loginPOM.Firstpost(); loginPOM.Trash();
 		 */
 		/*2nd Test case Logic Execution */
 		/*
@@ -71,7 +72,8 @@ public class LoginTests {
 		
 		
 		/*2nd week 1st Test case execution */
-		
+		@Test(priority =2,enabled=false)
+		public void PostFunctionality() throws InterruptedException {
 		loginPOM.Addnew();
 		loginPOM.sendLabel("Shaakir's Post Label");
 		loginPOM.sendContent("This is Shaakir's Content");
@@ -82,8 +84,10 @@ public class LoginTests {
 		loginPOM.DashBoardClk();
 		loginPOM.hoverPosts();
 		loginPOM.clickPostsBtn();
-		
+	}
 		/*2nd week 2nd Test case execution */
+		@Test(priority =3,enabled=false)
+		public void PrptyFunctionality() throws InterruptedException {
 		loginPOM.PropertiesClk();
 		loginPOM.FeaturesClk();
 		loginPOM.FeatureName("Shantiniketan");
@@ -103,7 +107,7 @@ public class LoginTests {
 		 screenShot.captureScreenShot("TestCase");
 	}
 		/*2nd week 3rd Test Case execution  */
-		@Test(priority =2,enabled=true)
+		@Test(priority =4,enabled=false)
 		public void BlogFunctionality() throws InterruptedException {
 		loginPOM.BlogBtn();
         loginPOM.ClkReadMore();
@@ -123,12 +127,14 @@ public class LoginTests {
 		loginPOM.RplyLnk();
 		loginPOM.RplyCnt("Reply3");
 		Thread.sleep(5000);
-		loginPOM.RplyBtn();
-        
+		loginPOM.RplyBtn();   
 		
 		
 	    screenShot.captureScreenShot("TestCase1");
-	}
+	    
+		} 
+	    
+      
 	
 	
 }

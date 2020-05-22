@@ -152,7 +152,40 @@ public class LoginPOM<Webelement> {
     
     @FindBy(xpath="//span[@id='replybtn']")
     private WebElement ReplyBtn;
-
+    
+    @FindBy(xpath ="//div[contains(text(),'Users')]")
+    private WebElement UserLnkHover;
+    
+    @FindBy(linkText = "Add New")
+    private WebElement Addnw;
+    
+    @FindBy(id="first_name")
+    private WebElement Firstname;
+    
+    @FindBy(id="last_name")
+    private WebElement Lastname;
+    
+    @FindBy(id="url")
+    private WebElement Website;
+    
+    @FindBy(xpath="//button[@class='button wp-generate-pw hide-if-no-js']")
+    private WebElement ShowPasswordBtn;
+    
+    @FindBy(id="pass1-text")
+    private WebElement EntPassword; 
+    
+    @FindBy(id="createusersub")
+    private WebElement AddUserBtn;
+    
+    @FindBy(xpath="//a[@class='page-title-action']")
+    private WebElement AddNw;
+    
+    @FindBy(id="role")
+    private WebElement Role;
+    
+    @FindBy(className ="pw-checkbox")
+    private WebElement ConfrmWkPwd;
+    
 	/**
 	 * Test Case1 starts here Click on Login button on the home screen of
 	 * http://realty-real-estate.upskills.in/
@@ -466,5 +499,67 @@ public class LoginPOM<Webelement> {
 	public void RplyBtn() {
 		this.ReplyBtn.click();
 	}
+	
+	
+	
+	//*3rd week start complex test case for adding users with the different values *//
+	
+	public void Users() { 
+		 Actions Users = new Actions(driver);
+		Users.moveToElement(UserLnkHover).perform();
+	
+	}
+	
+	public void Addnw() {
+		this.Addnw.click();
+	}
+	
+	
+	public void sendEmail(String Email) {
+		this.Email.clear();
+		this.Email.sendKeys(Email);
+	}
+	
+	public void sendFirstname(String Firstname) {
+		this.Firstname.clear();
+		this.Firstname.sendKeys(Firstname);
+	}
+	
+	public void sendLastname(String Lastname) {
+		this.Lastname.clear();
+		this.Lastname.sendKeys(Lastname);
+	}
+	
+	public void sendWebsite(String Website) {
+		this.Website.clear();
+		this.Website.sendKeys(Website);
+	}
+	
+	public void ShowPasswordBtn() {
+		this.ShowPasswordBtn.click();
+	}
+	
+	public void EntPswrd(String password) {
+		this.EntPassword.clear();
+		this.EntPassword.sendKeys(password);
+	}
+	
+	public void AddUserBtn() {
+		this.AddUserBtn.click();
+	}
+	
+	 /* public void AddNwUsr() {
+		this.Addnw.click();
+	} */
+	
+	public void SendRole(String Role) {
+    this.Role.sendKeys(Role);
+	}
+	
+	public void ChkWkPwd() {
+		this.ConfrmWkPwd.click();
+	}
+	
+	//*3rd week end complex test case for adding users with the different values *//
 	
 }
